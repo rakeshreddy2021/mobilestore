@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+video{
+    width: 100%;
+}
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+    color:#0fff;
+    font-size: 1.5rem
+    ;
+}
+.container1{
+    background-color:rgb(222, 222, 231);
+    display: flex;
+}
+.container1 img{
+    width: 200px;
+    height: 200px;
+    margin: 2% 6%;
+
+}
+.container1 .title{
+    padding: 10% 15%;
+}
+.container2{
+    background-color:rgb(145, 200, 245);
+    display: flex;
+}
+.container2 img{
+    width: 200px;
+    height: 200px;
+    margin: 2% 6%;
+
+}
+.container2 .title{
+    padding: 10% 15%;
+}
+footer{
+    background-color: rgb(238, 240, 244);
+    text-decoration: none;
+}
+footer a{
+    width: 100%;
+}

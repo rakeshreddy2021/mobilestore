@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="mobile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-bark  fixed-top bg-transparent">
+        <div class="container-fluid">
+          <img src="data:image/jpeg;base64,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" alt="mobile" height="40px" width="40px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    <!-- banner -->
+     <video src="asserts/vedios/Product Animation in blender _ Phone Commercial.mp4" loop autoplay muted ></video> 
+    <!-- card -->
+    <!-- subbanner -->
+    <div class="container1">
+      <div class="title" data-aos="fade-left">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, facere excepturi reic</p>
+      </div>
+      <img src="asserts\images\pic.png" alt="pic1"data-aos="fade-right" >
+    </div>
+    <div class="container2">
+      <img src="asserts\images\4.jpeg" alt="pic1"data-aos="fade-right">
+      <div class="title"data-aos="fade-left">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, facere excepturi reic</p>
+      </div>
+    </div>
+    <div class="container1">
+      <div class="title"data-aos="fade-left">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, facere excepturi reic</p>
+      </div>
+      <img src="asserts\images\Android-Phone-PNG-File.png" alt="pic1"data-aos="fade-right">
+    </div>
+    <div class="container2">
+      <img src="asserts/images/download3.jpeg" alt="pic1"data-aos="fade-left">
+      <div class="title"data-aos="fade-right">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum, facere excepturi reic</p>
+      </div>
+    </div>
+    
+    <!-- faq -->
+    <!-- footer -->
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> +91 8309430766</p>
+          <p><i class="fas fa-print me-3"></i> +91 9899999789</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+</footer>
+<!-- Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          offset:320,
+          duration:1500,
+        }
+      );
+    </script>
+</body>
+</html>
